@@ -1,9 +1,5 @@
-import { selector, atom } from "recoil";
-
-const textState = atom({
-  key: "textState", // unique ID (with respect to other atoms/selectors)
-  default: "", // default value (aka initial value)
-});
+import { selector } from "recoil";
+import textState from "./TextState";
 
 const charCountState = selector({
   key: "charCountState", // unique ID (with respect to other atoms/selectors)

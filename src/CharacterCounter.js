@@ -1,10 +1,6 @@
-import { atom, useRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 import CharacterCount from "./CharacterCount";
-
-const textState = atom({
-  key: "textState", // unique ID (with respect to other atoms/selectors)
-  default: "", // default value (aka initial value)
-});
+import textState from "./TextState";
 
 function CharacterCounter() {
   return (
